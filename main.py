@@ -32,3 +32,7 @@ def main():
     secuencia = leer_fasta(ruta_archivo)
     porcentaje_gc = calcular_porcentaje_gc(secuencia)
     print(f"El porcentaje de GC es: {porcentaje_gc:.2f}%")
+
+
+if __name__ == "__main__":
+    main()
