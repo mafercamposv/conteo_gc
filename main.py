@@ -21,3 +21,14 @@ def calcular_porcentaje_gc(secuencia):
     if total_count == 0:
         return 0
     return (gc_count / total_count) * 100
+
+
+# Elemento | Descripción |
+# Responsabilidad | Coordinar el flujo completo del programa. |
+# Entrada | Ninguna directamente en esta versión. |
+# Salida | No devuelve un valor; muestra el resultado en pantalla. |
+def main():
+    ruta_archivo = "secuencia.fasta"
+    secuencia = leer_fasta(ruta_archivo)
+    porcentaje_gc = calcular_porcentaje_gc(secuencia)
+    print(f"El porcentaje de GC es: {porcentaje_gc:.2f}%")
